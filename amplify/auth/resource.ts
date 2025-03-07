@@ -10,13 +10,17 @@ export const auth = defineAuth({
     externalProviders: {
       google: {
         clientId: secret('GOOGLE_CLIENT_ID'),
-        clientSecret: secret('GOOGLE_CLIENT_SECRET')
+        clientSecret: secret('GOOGLE_CLIENT_SECRET'),
+        scopes:["email"],
+        attributeMapping:{
+          email:"email",
+        }
       },
       callbackUrls: [
         'http://localhost:3000/profile',
-        'https://mywebsite.com/profile'
+        'https://3qapp.jp'
       ],
-      logoutUrls: ['http://localhost:3000/', 'https://mywebsite.com'],
+      logoutUrls: ['http://localhost:3000/', 'https://3qapp.jp'],
     }
   }
 });
