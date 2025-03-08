@@ -17,11 +17,12 @@ export const auth = defineAuth({
         }
       },
       callbackUrls: [
+        'https://qphotofolder.firebaseapp.com/__/auth/handler',
         'http://localhost:3000/profile',
         'https://3qapp.jp',
         'https://dee2466947c665af480e.auth.ap-northeast-1.amazoncognito.com/oauth2/idpresponse',
       ],
-      logoutUrls: ['http://localhost:3000/', 'https://3qapp.jp'],
+      logoutUrls: ['http://localhost:3000/', 'https://3qapp.jp/logout'],
     }
   }
 });
