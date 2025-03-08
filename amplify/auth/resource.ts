@@ -19,7 +19,7 @@ export const auth = defineAuth({
       callbackUrls: [
         'http://localhost:3000/profile',
         'https://3qapp.jp',
-        'https://25633e4aeeffc81f8fa4.auth.ap-northeast-1.amazoncognito.com/oauth2/idpresponse',
+        'https://dee2466947c665af480e.auth.ap-northeast-1.amazoncognito.com/oauth2/idpresponse',
       ],
       logoutUrls: ['http://localhost:3000/', 'https://3qapp.jp'],
     }
