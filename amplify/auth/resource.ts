@@ -11,18 +11,16 @@ export const auth = defineAuth({
       google: {
         clientId: secret('GOOGLE_CLIENT_ID'),
         clientSecret: secret('GOOGLE_CLIENT_SECRET'),
-        scopes:["email"],
+        scopes: ['profile'],
         attributeMapping:{
           email:"email",
         }
       },
       callbackUrls: [
-        'https://qphotofolder.firebaseapp.com/__/auth/handler',
         'http://localhost:3000/profile',
-        'https://3qapp.jp',
-        'https://dee2466947c665af480e.auth.ap-northeast-1.amazoncognito.com/oauth2/idpresponse',
+        'https://mywebsite.com/profile'
       ],
-      logoutUrls: ['http://localhost:3000/', 'https://3qapp.jp/logout'],
+      logoutUrls: ['http://localhost:3000/', 'https://mywebsite.com'],
     }
   }
 });
