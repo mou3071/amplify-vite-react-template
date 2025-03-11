@@ -17,10 +17,9 @@ export const auth = defineAuth({
         }
       },
       callbackUrls: [
-        'http://localhost:3000/profile',
-        'https://mywebsite.com/profile'
+        'https://25633e4aeeffc81f8fa4.auth.ap-northeast-1.amazoncognito.com/oauth2/idpresponse'
       ],
-      logoutUrls: ['http://localhost:3000/', 'https://mywebsite.com'],
+      logoutUrls: ['https://25633e4aeeffc81f8fa4.auth.ap-northeast-1.amazoncognito.com'],
     }
   }
 });
