@@ -26,3 +26,4 @@ This library is licensed under the MIT-0 License. See the LICENSE file.
 
 ## External identity providers
 https://docs.amplify.aws/react/build-a-backend/auth/concepts/external-identity-providers/
+https://docs.amplify.aws/android/build-a-backend/auth/connect-your-frontend/sign-in/
