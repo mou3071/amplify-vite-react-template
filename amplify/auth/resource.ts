@@ -17,9 +17,9 @@ export const auth = defineAuth({
         }
       },
       callbackUrls: [
-        'https://25633e4aeeffc81f8fa4.auth.ap-northeast-1.amazoncognito.com/oauth2/idpresponse'
+        'https://3qapp.jp/profile'
       ],
-      logoutUrls: ['https://25633e4aeeffc81f8fa4.auth.ap-northeast-1.amazoncognito.com'],
+      logoutUrls: ['https://3qapp.jp/login',],
     }
   }
 });
