@@ -17,7 +17,7 @@ export const auth = defineAuth({
         }
       },
       callbackUrls: [
-        'https://3qapp.jp/profile'
+        'album://profile'
       ],
       logoutUrls: ['https://3qapp.jp/login',],
     }
